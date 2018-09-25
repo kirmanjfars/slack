@@ -1,0 +1,38 @@
+{
+  "photos": [
+    {
+      "id": 1,
+      "title": "Nature",
+      "url": "https://github.com/kirmanjfars/images/blob/master/lanscape/1.JPG?raw=true",
+      "categoryId": 1,
+      "description": "A tree in Guize village.",
+      "date": "20-04-2014"
+    },
+    {
+      "id": 2,
+      "title": "",
+      "url": "https://github.com/kirmanjfars/images/blob/master/lanscape/10.JPG?raw=true",
+      "categoryId": 1,
+      "description": "A lake mirroring mountain behind STOPE village    ",
+      "date": "2014-03-02"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Lanscape"
+    },
+    {
+      "id": 2,
+      "name": "Flower"
+    },
+    {
+      "id": 3,
+      "name": "Wildlife"
+    },
+    {
+      "id": 4,
+      "name": "Portraiture"
+    }
+  ]
+}
