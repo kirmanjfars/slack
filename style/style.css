@@ -62,10 +62,19 @@ header {
     float: right;
     text-transform: capitalize;
     text-decoration: none;
+   
     color: white;
     padding: 15px 25px;
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
+}
+
+.pages a p{
+    cursor: pointer;
+}
+
+.pages a p:hover{
+    cursor: pointer;
 }
 
 

@@ -1,4 +1,4 @@
-let audiom = document.getElementById("shuter");
+let audio = document.getElementById("shuter");
 let landAudio = document.getElementById("landAudio");
 let flowerAudio = document.getElementById("flowerShuter");
 let wildfileSound = document.getElementById("wildfileSound");
@@ -6,6 +6,7 @@ let portSound = document.getElementById("portAudio");
 
 // start of home
 function takePhoto() {
+    console.log("hi")
     $('.photoContainer').css('display', 'none')
     setTimeout(() => {
         $('.flash').css('display', 'inline')
@@ -18,7 +19,7 @@ function takePhoto() {
     }, 3000)
 
     setTimeout(() => {
-        // audiom.play();
+        audio.play();
 
     }, 2500)
     setTimeout(() => {
@@ -42,7 +43,7 @@ $("#home").on('click', () => {
     $("body").css("background-image", "url(js/IMG_3345.JPG)").css("background-size", "cover");
     takePhoto();
 })
-takePhoto();
+$("#home").click();
 
 // end of home
 
@@ -260,12 +261,11 @@ $('#wildlife').on('click', function dis() {
                         .then(function (cats) {
                             cats.data.forEach(cat => {
                                 if (cat.id == photo.categoryId) {
-                                    if (cat.id == 3 && arrCounter != 0) {
+                                    if (cat.id == 3) {
                                         if (wilCon == false) {
                                             wilContainer();
                                             wilCon = true;
                                         }
-                                        arrCounter--;
                                         wilPhoto(photo.title, photo.url, photo.description, photo.date, cat.name);
                                         wilTake();
                                     }
