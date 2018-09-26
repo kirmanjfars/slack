@@ -6,7 +6,6 @@ let portSound = document.getElementById("portAudio");
 
 // start of home
 function takePhoto() {
-    console.log("hi")
     $('.photoContainer').css('display', 'none')
     setTimeout(() => {
         $('.flash').css('display', 'inline')
@@ -134,7 +133,6 @@ function imgCapDisp() {
     $('.images .image img').mouseover(function () {
         let p = $(this).closest('div');
         let text = p.find('.imageCap');
-        console.log(text);
         $(text).css("margin-top", '-100px').css("transition", "all 1s")
         $('body').css('background', 'linear-gradient(90deg, #7C7B78 , #61727A )')
         $('.images .image img').mouseleave(function () {
@@ -234,7 +232,6 @@ function volCapDisp() {
     $(' img').mouseover(function () {
         let p = $(this).closest('div');
         let text = p.find('.imageCap');
-        console.log(text);
         $(text).css("visibility", 'visible').css("width", '99%')
         $(text).css("margin-top", '-100px').css("transition", "all 1s")
         $('body').css('background', 'linear-gradient(90deg, #7C7B78 , #61727A )')
@@ -256,7 +253,6 @@ $('#wildlife').on('click', function dis() {
         axios.get('http://localhost:3000/photos')
             .then(function (photos) {
                 photos.data.forEach(photo => {
-                    console.log(arrCounter);
                     axios.get('http://localhost:3000/categories')
                         .then(function (cats) {
                             cats.data.forEach(cat => {
@@ -268,6 +264,7 @@ $('#wildlife').on('click', function dis() {
                                         }
                                         wilPhoto(photo.title, photo.url, photo.description, photo.date, cat.name);
                                         wilTake();
+                                        arrCounter--;
                                     }
                                 }
                             })
@@ -302,12 +299,13 @@ function wilPhoto(title, url, desc, date, cat) {
     $('.whead').css('margin', '-25px 5% 0px 5%');
 
     if (outer == 4 && inner > 0) {
-
         if (outerFlage == false) {
             $('.wildfile').append(`<div class="col10 row rowd${wilRows}"></div>`);
             falge = true;
-
+               console.log(outer, inner, desc)
         }
+
+         
         if (inner == 2) {
             $(`.rowd${wilRows}`).append(`<div class="col7"> 
             <img src="${url}" alt="">
@@ -316,9 +314,9 @@ function wilPhoto(title, url, desc, date, cat) {
                 <h5>${title}</h5>
                 <h6>${date}</h6>
                 <h5>${desc}</h5></div>`);
+              
             inner--;
-        }
-        if (inner == 1) {
+        }else if(inner == 1) {
             $(`.rowd${wilRows}`).append(`<div class="col3"> 
             <img src="${url}" alt="">
             <div class="imageCap">
@@ -327,17 +325,19 @@ function wilPhoto(title, url, desc, date, cat) {
                 <h6>${date}</h6>
                 <h5>${desc}</h5></div>`);
             inner = 3;
-            outer--;
+            outer=3;
             wilRows++;
             outerFlage = false;
         }
-    }
-
-    if (outer == 3 && inner > 0) {
+       
+      
+    }else if (outer == 3 && inner > 0) {
         if (outerFlage == false) {
             $('.wildfile').append(`<div class="col10 row rowd${wilRows}"></div>`);
             falge = true;
-        }
+        } 
+        
+        
         if (inner == 3) {
             $(`.rowd${wilRows}`).append(`<div class="bee col4">
             <img src="${url}" alt="">
@@ -349,9 +349,7 @@ function wilPhoto(title, url, desc, date, cat) {
             </div>  </div> 
             `);
             inner--;
-        }
-
-        if (inner == 2) {
+        }else if (inner == 2) {
             $(`.rowd${wilRows}`).append(`<div class="colum col6 cold${cols}  hours">
             <div class="f">
             <img src="${url}" alt="">
@@ -365,8 +363,7 @@ function wilPhoto(title, url, desc, date, cat) {
             </div> 
             `);
             inner--;
-        }
-        if (inner == 1) {
+        }else if (inner == 1) {
             $(`.cold${cols}`).append(`
             <div class="t">
             <img src="${url}" alt="">
@@ -382,9 +379,7 @@ function wilPhoto(title, url, desc, date, cat) {
             cols++;
             outerFlage = false;
         }
-    }
-
-    if (outer == 2 && inner > 0) {
+    }else if (outer == 2 && inner > 0) {
         if (outerFlage == false) {
             $('.wildfile').append(`<div class="col10 row rowd${wilRows}"></div>`);
             falge = true;
@@ -429,10 +424,7 @@ function wilPhoto(title, url, desc, date, cat) {
             outerFlage = false;
             wilRows++;
         }
-    }
-
-
-    if (outer == 1 && inner > 0) {
+    }else if (outer == 1 && inner > 0) {
         $('.wildfile').append(`<div class="col10 last rowd${wilRows}">
             <img src="${url}" alt="">
             <div class="imageCap">
@@ -490,7 +482,7 @@ function wilCapDisp() {
         if (name == "f") {
             $(`.${name}`).css("margin-bottom", '12px')
         }
-        console.log(name);
+
         let text = p.find('.imageCap');
         $(text).css("display", 'block').css("width", '99%').css("transition", "all 1s")
         $(text).css("margin-top", '-122px').css("transition", "all 1s")
@@ -611,7 +603,6 @@ function porCapDisp() {
     $(' img').mouseover(function () {
         let p = $(this).closest('div');
         let text = p.find('.imageCap');
-        console.log(text);
         $(text).css("visibility", 'visible').css("width", '100%')
         $(text).css("margin-top", '-110px').css("transition", "all 1s")
         $('body').css('background', 'linear-gradient(90deg, #7C7B78 , #61727A )')
@@ -679,12 +670,6 @@ function create() {
     let newDesc = $('#desc');
     let newCat = $('#category');
     postId++;
-
-    console.log(newTitle,
-        newUrl,
-        newDate,
-        newDesc,
-        newCat)
     if (newCat.val() == "lanscape") {
         catId = 1;
     }
