@@ -3,3 +3,426 @@
     margin: 0%;
     padding: 0%;
 }
+
+body{
+    font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif;
+    background-color: rgb(245, 245, 245);
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+
+
+/* start of navber */
+
+
+header{
+   background-color: #006BA6;
+}
+
+
+nav{
+    display: flex; 
+    flex-direction: row;
+}
+
+.left{
+    padding: 5px 5px;
+    width: 40%;
+}
+.left , .board, .search{
+    display: flex; 
+    flex-direction: row;
+    font-size: 16px;
+    color: white;
+}
+
+.search {
+    background-color: rgb(93, 151, 185);
+    width: 180px;
+    margin-left: 5px;
+}
+
+
+.left i{
+    padding: 5px 10px;
+    background-color: rgb(93, 151, 185);
+    margin-left: 5px;    
+}
+
+ .board , .search{
+    border-radius: 5px;
+}
+
+.board  p {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.board i{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.fa-home , .fa-search{
+    border-radius: 5px;
+}
+
+.left .board{
+    border-radius: 10px;
+}
+
+.search i{
+    margin-left: 150px;
+}
+
+
+.left p{
+    padding: 5px 0px;
+    padding-right: 10px;
+    background-color: rgb(93, 151, 185);
+}
+
+.center{
+    width: 20%;
+    text-align: center;
+}
+
+.center img{
+   height: 25px;
+   margin: 8px auto 0px auto;
+   opacity: 0.5;
+}
+
+.right{
+    width: 40%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.right i{
+    padding: 5px 10px;
+    background-color: rgb(93, 151, 185);
+    margin-left: 1px;   
+    color: white;
+    margin-top: 5px;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+
+nav i:hover, .board p:hover, .search:hover{
+    background-color: rgb(64, 145, 177);
+}
+
+nav img:hover{
+opacity: 0.8;
+}
+
+
+/* end of navber */
+
+/* start of board body */
+
+
+.boards{
+    width: 80%;
+    margin: 0%  auto;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.boardsMenu{
+    padding: 50px 0px;
+    font-size: 16px;
+}
+
+.boardsMenu p{
+    font-weight: 600;
+}
+
+.bmItem, .cmItem{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+}
+
+.bmItem p, .cmItem p{
+   margin-left: 10px;
+   font-size: 14px;
+   width: 300px;
+}
+
+.boardsMenus{
+    width: 15%;
+}
+
+.bmItem i, .cmItem i{
+    color: rgb(97, 97, 97);
+}
+
+.teams h4{
+     font-weight: 100;
+     color: gray;
+}
+
+.teams{
+    padding: 10px 10px;
+    width: 100%;
+}
+
+
+.boardProjects{
+    padding: 50px 0px 0px 0px;
+}
+
+.boardProjects h4{
+    display: flex;
+    flex-direction: row;
+}
+
+.boardProjects h4 i{
+    margin-right: 20px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: row;
+}
+
+.boardProject , .cnBoard{
+    width: 200px;
+    height: 100px;
+    background-color: #005B8F;
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    margin-top: 20px;
+    column-count: 3;
+    margin-right: 20px;
+}
+
+.cnBoard{
+    background-color: rgb(231, 229, 229);
+    color: rgb(73, 72, 72);
+    word-spacing: 3px;
+    column-count: 1;
+    text-align: center;
+}
+
+.cnBoard h5{
+    text-align: center;
+    font-weight: 100;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+/* end of board body */
+
+
+.projectBoard{
+    background-color: #007ABF;
+    width: 100%;
+    height: 100vh;
+  
+}
+
+.headProject{
+    display: flex;
+    flex-direction: row;
+}
+
+.headLeft{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    width: 70%;
+}
+
+.headLeft div{
+
+    font-weight: 100;
+    flex-direction: row;
+    color: white;
+    padding: 5px 15px;
+    margin: 20px 5px;
+}
+
+.headLeft div{
+    border-right: 1px solid rgba(255, 255, 255, 0.527);
+}
+
+.headLeft div:last-child, .headLeft div:first-child{
+    border-right: 1px solid #007ABF;
+}
+
+.headLeft div:hover, {
+    background-color: #005B8F;
+}
+
+.headLeft div p{
+    font-size: 14px;
+}
+
+
+.headProject .headLeft:last-child div{
+    text-align: right;
+    width: 100%;
+}
+
+.headProject .headLeft:last-child div:hover{
+    background-color: #007ABF;
+}
+
+.dots{
+    font-size: 22px;
+}
+
+.show{
+    text-decoration: underline;
+}
+
+.listBoard, .listHead{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.list{
+    min-width: 275px;
+    background-color: #DEE4E7;
+    margin-left: 10px;
+    border-radius: 3px;
+    /* transform: rotate(20deg);  */
+    padding: 20px 10px;
+}
+
+.listHead p{
+    width: 100%;
+    text-align: left;
+    font-size: 14px; 
+    font-weight: bold;
+}
+
+
+.listHead i{
+    width: 100%;
+    text-align: right;
+    color: rgba(128, 128, 128, 0.609);
+}
+
+.addlist{
+    color: gray;
+    margin-top: 5px;
+    font-size: 14px; 
+    font-weight: 100;
+    padding: 5px 0px;
+}
+
+
+
+.plus{
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.listItem{
+    margin: 10px 0px;
+    padding: 10px ;
+    border-radius: 5px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    color: rgb(73, 72, 72);
+    background-color: white;
+    box-shadow: 0px 1px 2px rgb(85, 85, 85);
+}
+
+.listItem i{
+    width: 20%;
+    text-align: right;
+    font-size: 10px;
+   display: none;
+}
+
+
+.listItem p{
+    width: 80%;
+}
+
+.form{
+    width: 100%;
+    display: none;
+}
+
+
+
+.form #texta{
+    resize: none;
+    font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif;
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgb(85, 85, 85);
+}
+
+.form button{
+    margin-top: 10px;
+    background-color:  #DEE4E7;
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+#add{
+    background-color:  rgb(25, 187, 25);
+}
+
+#add:hover{
+    background-color:  rgb(24, 163, 24);
+}
+
+
+#can{
+    background-color:  red;
+}
+
+
+#can:hover{
+    background-color:  rgb(202, 16, 16);
+}
+
+.addText{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.addText:hover{
+    background-color:rgba(148, 145, 145, 0.527);
+    color: rgb(37, 36, 36);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
