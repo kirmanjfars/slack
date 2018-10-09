@@ -5,424 +5,319 @@
 }
 
 body{
-    font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif;
-    background-color: rgb(245, 245, 245);
-    overflow-y: hidden;
-    overflow-x: auto;
+    font-family: 'Lucida Sans Regular';  
+    overflow: hidden;
+}
+
+.clientList{
+    width: 16%;
+    background-color: #523B4B;
+    height: 100vh;
+    color: white;
+   padding: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 
 
-/* start of navber */
-
-
-header{
-   background-color: #006BA6;
+.clientListName i{
+    font-size: 22px;
+    width: 15%;
+    text-align: right;
+    color: #948C91;
 }
 
-
-nav{
-    display: flex; 
-    flex-direction: row;
-}
-
-.left{
-    padding: 5px 5px;
-    width: 40%;
-}
-.left , .board, .search{
-    display: flex; 
-    flex-direction: row;
-    font-size: 16px;
+.clientList i:hover{
     color: white;
 }
 
-.search {
-    background-color: rgb(93, 151, 185);
-    width: 180px;
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexCol{
+    display: flex;
+    flex-direction: column;
+}
+
+.clientList h4{
+    color: #948C91;
+    font-weight: 100;
+    font-size: 14px;
+}
+.clientHeaderUser i, .fa-circle{
+    font-size: 11px;
+    color: #177572;
+    margin: 3px;
+    margin-left: 0px;
+}
+
+.clientHeaderUser{
+    margin-top: 5px;
+}
+
+.jumpToContent{
+   background-color: rgb(46, 34, 42);
+   padding:7px;
+   border-radius: 5px;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   font-weight: bold;
+   font-size: 14px;
+   color: #948C91;
+}
+
+.jumpToContent p{
+    margin-left: 15px;
+}
+
+.threads{
+    font-size: 14px;
+    color: rgb(163, 155, 160);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.threads p{
     margin-left: 5px;
 }
 
-
-.left i{
-    padding: 5px 10px;
-    background-color: rgb(93, 151, 185);
-    margin-left: 5px;    
+.channelHead, .directMesHead{
+    color: #948C91;
 }
 
- .board , .search{
-    border-radius: 5px;
-}
-
-.board  p {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.board i{
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-.fa-home , .fa-search{
-    border-radius: 5px;
-}
-
-.left .board{
-    border-radius: 10px;
-}
-
-.search i{
-    margin-left: 150px;
-}
-
-
-.left p{
-    padding: 5px 0px;
-    padding-right: 10px;
-    background-color: rgb(93, 151, 185);
-}
-
-.center{
-    width: 20%;
-    text-align: center;
-}
-
-.center img{
-   height: 25px;
-   margin: 8px auto 0px auto;
-   opacity: 0.5;
-}
-
-.right{
-    width: 40%;
-    text-align: right;
-    margin-right: 10px;
-}
-
-.right i{
-    padding: 5px 10px;
-    background-color: rgb(93, 151, 185);
-    margin-left: 1px;   
-    color: white;
-    margin-top: 5px;
-    border-radius: 3px;
-    padding: 5px 10px;
-}
-
-
-nav i:hover, .board p:hover, .search:hover{
-    background-color: rgb(64, 145, 177);
-}
-
-nav img:hover{
-opacity: 0.8;
-}
-
-
-/* end of navber */
-
-/* start of board body */
-
-
-.boards{
-    width: 80%;
-    margin: 0%  auto;
-    display: flex;
-    flex-direction: row;
-
-}
-
-.boardsMenu{
-    padding: 50px 0px;
+.channelHead i {
     font-size: 16px;
+    width: 100%;
+    text-align: right;
 }
 
-.boardsMenu p{
+.directMesHead i{
+    font-size: 16px;
+    width: 34%;
+    text-align: right;
+}
+
+.channelHead, .directMesHead {
+    font-size: 16px;
+    font-weight: 800;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+
+.channelListItem, .directMesItem{
+    color: #948C91;
+    font-size: 14px;
+    padding: 3px 7px;
+    cursor: pointer;
     font-weight: 600;
 }
 
-.bmItem, .cmItem{
-    display: flex;
-    margin-top: 20px;
-    flex-direction: row;
+.channelListItem:hover, .directMesItem:hover{
+    background-color: rgb(46, 34, 42);
 }
 
-.bmItem p, .cmItem p{
-   margin-left: 10px;
-   font-size: 14px;
-   width: 300px;
-}
-
-.boardsMenus{
-    width: 15%;
-}
-
-.bmItem i, .cmItem i{
-    color: rgb(97, 97, 97);
-}
-
-.teams h4{
-     font-weight: 100;
-     color: gray;
-}
-
-.teams{
-    padding: 10px 10px;
-    width: 100%;
-}
-
-
-.boardProjects{
-    padding: 50px 0px 0px 0px;
-}
-
-.boardProjects h4{
-    display: flex;
-    flex-direction: row;
-}
-
-.boardProjects h4 i{
-    margin-right: 20px;
-}
-
-.projects{
-    display: flex;
-    flex-direction: row;
-}
-
-.boardProject , .cnBoard{
-    width: 200px;
-    height: 100px;
-    background-color: #005B8F;
-    border-radius: 10px;
-    padding: 15px;
-    color: white;
-    margin-top: 20px;
-    column-count: 3;
-    margin-right: 20px;
-}
-
-.cnBoard{
-    background-color: rgb(231, 229, 229);
-    color: rgb(73, 72, 72);
-    word-spacing: 3px;
-    column-count: 1;
-    text-align: center;
-}
-
-.cnBoard h5{
-    text-align: center;
-    font-weight: 100;
-    margin-top: 25px;
+.channelListItem .name, .directMesItem .name{
     margin-left: 10px;
 }
 
-/* end of board body */
-
-
-.projectBoard{
-    background-color: #007ABF;
-    width: 100%;
-    height: 100vh;
-  
-}
-
-.headProject{
-    display: flex;
-    flex-direction: row;
-}
-
-.headLeft{
-    display: flex;
-    flex-direction: row;
-    color: white;
-    width: 70%;
-}
-
-.headLeft div{
-
-    font-weight: 100;
-    flex-direction: row;
-    color: white;
-    padding: 5px 15px;
-    margin: 20px 5px;
-}
-
-.headLeft div{
-    border-right: 1px solid rgba(255, 255, 255, 0.527);
-}
-
-.headLeft div:last-child, .headLeft div:first-child{
-    border-right: 1px solid #007ABF;
-}
-
-.headLeft div:hover, {
-    background-color: #005B8F;
-}
-
-.headLeft div p{
-    font-size: 14px;
+.directMesItem i{
+   font-weight: bold;
 }
 
 
-.headProject .headLeft:last-child div{
-    text-align: right;
-    width: 100%;
+::-webkit-scrollbar {
+    height: 10px;
+    width: 5px;
 }
 
-.headProject .headLeft:last-child div:hover{
-    background-color: #007ABF;
-}
-
-.dots{
-    font-size: 22px;
-}
-
-.show{
-    text-decoration: underline;
-}
-
-.listBoard, .listHead{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.list{
-    min-width: 275px;
-    background-color: #DEE4E7;
-    margin-left: 10px;
-    border-radius: 3px;
-    /* transform: rotate(20deg);  */
-    padding: 20px 10px;
-}
-
-.listHead p{
-    width: 100%;
-    text-align: left;
-    font-size: 14px; 
-    font-weight: bold;
+::-webkit-scrollbar-track {
+    background: #523B4B;
 }
 
 
-.listHead i{
-    width: 100%;
-    text-align: right;
-    color: rgba(128, 128, 128, 0.609);
+::-webkit-scrollbar-thumb {
+    background: rgb(46, 34, 42);
+    border-radius: 40px;
 }
 
-.addlist{
-    color: gray;
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(46, 34, 42);
+}
+
+
+.friendInfo, .features{
+    width: 30%;
+    margin:  15px 25px;
+    color: #878a8f;
+ 
+}
+
+.info{
     margin-top: 5px;
-    font-size: 14px; 
-    font-weight: 100;
-    padding: 5px 0px;
+    font-size: 13px;
+}
+
+.fa-star , .state, .username{
+    padding: 0% 10px;
+}
+
+.state i{
+    font-size: 10px;
+    color: #7ECD95;
+    padding: 2px 5px 0px 0px
+}
+
+.state{
+    border-left: 2px solid #7071738c;
+    border-right: 2px solid #7071738c;
+}
+
+.friendInfo h3{
+    color: #303134;
+}
+
+.features{
+    width: 51%;
+    text-align: right;
+}
+
+.features div{
+    text-align: right;
+    width: 90%; 
 }
 
 
+.friendChatHead{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+    border-bottom: 1px solid rgba(148, 140, 145, 0.336);
+}
 
-.plus{
-    font-size: 16px;
-    font-weight: bold;
+.features i, .features input{
+    margin-left: 10px;
+}
+
+.features input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.friendChat{
+    height: 100vh;
+}
+
+
+.sendArea{
+    width: 80%;
+    position: absolute;
+    bottom: 0%;
+    margin: 20px;
+    border: 2px solid rgba(105, 99, 103, 0.835);
+    border-radius: 5px;
+}
+
+.sendArea .fa-plus{
+    width: 5%;
+    text-align: center;
+    padding: 10px 0%;
+    border-right: 2px solid rgba(105, 99, 103, 0.835);
+    color: rgba(105, 99, 103, 0.835);
+}
+
+.sendArea .writeSms{
+    margin-left: 0px;
+   width: 95%;
+   color: rgba(148, 140, 145, 0.835);
+}
+.writeSms i{
+    font-size: 22px;
+    margin-top: 5px;
     margin-right: 10px;
 }
 
-.listItem{
-    margin: 10px 0px;
-    padding: 10px ;
-    border-radius: 5px;
+.writeSms input{
+    border: none;
+    padding: 10px 10px;
+    width: 95%;
     font-size: 14px;
-    display: flex;
-    flex-direction: row;
-    color: rgb(73, 72, 72);
-    background-color: white;
-    box-shadow: 0px 1px 2px rgb(85, 85, 85);
 }
 
-.listItem i{
-    width: 20%;
-    text-align: right;
-    font-size: 10px;
-   display: none;
+.chatBody{
+    position: absolute;
+    bottom: 10%;
+    margin-left: 20px;
 }
 
-
-.listItem p{
-    width: 80%;
+.sms img{
+    width: 3%;
+    height: 3%;
+    margin-right: 10px;
+    border-radius: 5px;
 }
 
-.form{
+.sms{
+    margin-bottom: 15px;
+}
+
+.smsText p{
+    font-size: 14px;
+    color: rgb(73, 69, 71);
+    margin-bottom: 5px;
+}
+
+.userName p{
+    color: rgba(148, 140, 145, 0.835);
+    font-size: 12px;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+.userName{
+    margin-bottom: 5px;
+}
+
+.chatBody{
+    overflow: scroll;
+    height: 78vh;
     width: 100%;
+    overflow-x: hidden;
+}
+
+.app{
     display: none;
 }
 
-
-
-.form #texta{
-    resize: none;
-    font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif;
-    padding: 5px;
-    font-size: 16px;
-    width: 100%;
-    height: 50px;
-    border: none;
+#myForm{
+    width: 30%;
+    margin: 100px auto;
+    border: 1px solid #6a6c70;
+    padding: 10px 20px;
     border-radius: 5px;
-    box-shadow: 0px 1px 2px rgb(85, 85, 85);
 }
 
-.form button{
-    margin-top: 10px;
-    background-color:  #DEE4E7;
-    border: none;
-    margin-left: 10px;
-    border-radius: 5px;
-    padding: 10px 30px;
-    font-weight: bold;
-    font-size: 16px;
+.form-container h1,.form-container label,.form-container input, .form-container button{
+    margin: 10px 10px;
+    padding: 10px 5px;
+}
+
+.form-container button{
+    background-color: #22978A;
     color: white;
+    border: none;
+    width: 50%;
+    margin: 0% auto;
+    margin-top: 25px;
 }
 
-#add{
-    background-color:  rgb(25, 187, 25);
+.form-container button:hover{
+    background-image: linear-gradient(to right ,rgb(11, 83, 75), rgb(57, 175, 161));
+    transition: all 3s;
 }
-
-#add:hover{
-    background-color:  rgb(24, 163, 24);
-}
-
-
-#can{
-    background-color:  red;
-}
-
-
-#can:hover{
-    background-color:  rgb(202, 16, 16);
-}
-
-.addText{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.addText:hover{
-    background-color:rgba(148, 145, 145, 0.527);
-    color: rgb(37, 36, 36);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-

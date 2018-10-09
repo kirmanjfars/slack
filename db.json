@@ -1,34 +1,196 @@
 {
-    "projects": [
+    "channels": [{
+        "id": 1,
+        "name": "bootcamp"
+    }, {
+        "id": 2,
+        "name": "powerskills"
+    }, {
+        "id": 3,
+        "name": "general"
+    }, {
+        "id": 4,
+        "name": "random"
+    }, {
+        "id": 5,
+        "name": "extra-notes"
+    }, {
+        "id": 6,
+        "name": "game-of-web"
+    }, {
+        "id": 7,
+        "name": "speakersessions"
+    }],
+    "messages": [{
+            "id": 1,
+            "text": "hellow",
+            "senderId": 1,
+            "reciverId": 2,
+            "time": "21:00 AM"
+        },
         {
-          "id": 1,
-          "title": "Photography project"
+            "id": 2,
+            "text": "Hi",
+            "senderId": 2,
+            "reciverId": 1,
+            "time": "21:00 AM"
         }, {
             "id": 2,
-            "title": "cenima project"
-          }], 
-    "lists":[
-        {
-            "id":1,
-            "titleList":"To Do", 
-            "projectId": 1
+            "text": "what are you doing?",
+            "senderId": 1,
+            "reciverId": 2,
+            "time": "21:00 AM"
+        }, {
+            "id": 3,
+            "text": "Nothing U?",
+            "senderId": 2,
+            "reciverId": 1,
+            "time": "21:00 AM"
+        }, {
+            "id": 4,
+            "text": "me to just wasting time",
+            "senderId": 1,
+            "reciverId": 2,
+            "time": "21:00 AM"
         },
         {
-            "id":2,
-            "titleList":"Doing", 
-            "projectId": 1
+            "id": 5,
+            "text": "lets do our project",
+            "senderId": 2,
+            "reciverId": 1,
+            "time": "21:00 AM"
+        }, {
+            "id": 6,
+            "text": "okay i am gona prepare my PC",
+            "senderId": 1,
+            "reciverId": 2,
+            "time": "21:00 AM"
+        }, {
+            "id": 7,
+            "text": "oki GD luck",
+            "senderId": 2,
+            "reciverId": 1,
+            "time": "21:00 AM"
+        }, {
+            "id": 8,
+            "text": "thanks",
+            "senderId": 1,
+            "reciverId": 2,
+            "time": "21:00 AM"
         },
         {
-            "id":3,
-            "titleList":"Done", 
-            "projectId": 1
+            "id": 11,
+            "text": "can we meet ?",
+            "senderId": 3,
+            "reciverId": 1,
+            "time": "21:00 AM"
+        }, {
+            "id": 12,
+            "text": "okay i am gona prepare my PC",
+            "senderId": 1,
+            "reciverId": 3,
+            "time": "21:00 AM"
+        }, {
+            "id": 13,
+            "text": "oki GD luck",
+            "senderId": 3,
+            "reciverId": 1,
+            "time": "21:00 AM"
+        }, {
+            "id": 14,
+            "text": "thanks",
+            "senderId": 1,
+            "reciverId": 3,
+            "time": "21:00 AM"
+        }, {
+            "id": 15,
+            "text": "Khalid datwani linki mamostam lo bneri ",
+            "senderId": 2,
+            "reciverId": 3,
+            "time": "21:00 AM"
+        }, {
+            "id": 16,
+            "text": "Bale mabast gian farmo awata",
+            "senderId": 3,
+            "reciverId": 2,
+            "time": "21:00 AM"
+        }, {
+            "id": 17,
+            "text": "thanks",
+            "senderId": 2,
+            "reciverId": 3,
+            "time": "21:00 AM"
         }
     ],
-    "cards":[
-        {
-            "id":1,
-            "text": "Creating A Kirmanj Layout",
-            "listId":1
-        }
-    ]
+    "users": [{
+        "id": 1,
+        "name": "Krmanj Mzuri",
+        "status": "active",
+        "pass": 123,
+        "imgAddres": "https://scontent.febl1-1.fna.fbcdn.net/v/t31.0-0/c0.168.370.370/p370x247/30073131_2123928784496742_249733199301737820_o.jpg?_nc_cat=101&oh=524af5909946ba09c2c7f6742a1f578d&oe=5C52D946"
+
+    }, {
+        "id": 2,
+        "name": "Mabast",
+        "status": "active",
+        "pass": 123,
+        "imgAddres": "https://scontent.febl1-1.fna.fbcdn.net/v/t1.0-1/c0.0.160.160/p160x160/13895082_830927167008655_4478343426952109156_n.jpg?_nc_cat=100&oh=44956cc2214f9e11de400a3a2025226d&oe=5C53BB91"
+
+    }, {
+        "id": 3,
+        "name": "Khalid",
+        "status": "active",
+        "pass": 123,
+        "imgAddres": "https://scontent.febl1-1.fna.fbcdn.net/v/t1.0-1/c0.15.160.160/p160x160/30515761_1485937358178637_642477599393579008_n.jpg?_nc_cat=110&oh=46e44c5044aaa0a284530de97b298cc9&oe=5C57ECC3"
+    }, {
+        "id": 4,
+        "name": "Jegr",
+        "status": "active",
+        "pass": 123
+
+    }, {
+        "id": 5,
+        "name": "Ahmad",
+        "status": "away",
+        "pass": 123
+    }, {
+        "id": 6,
+        "name": "Noveen",
+        "status": "active",
+        "pass": 123
+
+    }, {
+        "id": 7,
+        "name": "Neyan",
+        "status": "away",
+        "pass": 123
+
+    }, {
+        "id": 8,
+        "name": "Shayma",
+        "status": "away",
+        "pass": 123
+    }, {
+        "id": 9,
+        "name": "Bahra",
+        "status": "away",
+        "pass": 123
+
+    }, {
+        "id": 10,
+        "name": "Hedi",
+        "status": "active",
+        "pass": 123
+    }, {
+        "id": 11,
+        "name": "Sarkawt",
+        "status": "away",
+        "pass": 123
+
+    }, {
+        "id": 12,
+        "name": "khatab",
+        "status": "active",
+        "pass": 123
+    }]
 }

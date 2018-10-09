@@ -7,148 +7,108 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
-    <title>Trello</title>
+    <title>Slack</title>
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <div class="left">
-                <i class="fas fa-home"></i>
-                <div class="board">
-                    <i class="fab fa-trello"></i>
-                    <p>Boards</p>
-                </div>
-                <div class="search"> <i class="fas fa-search"></i></div>
-            </div>
-            <div class="center">
-                <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/u/res/images/trello-header-logos/af7af6ed478d3460709d715d9b3f74a4/trello-logo-white.svg"
-                    alt="">
-            </div>
-            <div class="right">
-                <i class="fas fa-plus"></i>
-                <i class="fas fa-info-circle"></i>
-                <i class="fas fa-bell"></i>
-                <i class="fas fa-user-alt"></i>
-            </div>
-        </nav>
-    </header>
+    <section class="app flexRow">
 
-    <section class="app">
-
-        <div class="projectBoard">
-            <div class="headProject">
-                <div class="headLeft">
-                    <div>
-                        <h3>Photography Website Project</h3>
-                    </div>
-                    <div><i class="far fa-star"></i></div>
-                    <div>
-                        <p>Personal</p>
-                    </div>
-                    <div><i class="fas fa-lock"></i> Private</div>
-                    <div><i class="fas fa-user-plus"></i></div>
-                </div>
-                <div class="headLeft">
-                    <div>
-                        <p> <span class="dots">... </span> <u>Show Menu</u></p>
-                    </div>
-                </div>
-            </div>
-            <div class="listBoard">
-                <div class="list">
-                    <div draggable="true" class="listHead">
-                        <p>To Do</p> <i class="fas fa-ellipsis-h"></i>
-                    </div>
-                    <div class="listItems">
-                        <div draggable="true" class="listItem">
-                            <p>Creating A Kirmanj Layout</p>
-                            <i class="fas fa-pen"></i>
-                        </div>
-                        <div draggable="true" class="listItem">
-                            <p>Creating A Mabast Layout</p>
-                            <i class="fas fa-pen"></i>
-                        </div>
-                        <div draggable="true" class="listItem">
-                            <p>Creating A Ali Layout</p>
-                            <i class="fas fa-pen"></i>
-                        </div>
-                        <div draggable="true" class="listItem">
-                            <p>Creating A Nariman Layout</p>
-                            <i class="fas fa-pen"></i>
-                        </div>
-                        <div draggable="true" class="listItem">
-                            <p>Creating A responisve Layout</p>
-                            <i class="fas fa-pen"></i>
-                        </div>
-                    </div>
-                    <div class="addlist">
-                       <div class="addText">
-                            <span class="plus">+</span>
-                            <p>Add an other Card</p>
-                       </div>
-                     
-                        <div class="form">
-                            <input type="text"  id="texta" placeholder="Enter here">
-                            <div class="btn">
-                                <button type="button" id="add">Add card</button>
-                                <button id="can" type="button">Cancle</button>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="list">
-                    <div draggable="true" class="listHead">
-                        <p>Doing on</p> <i class="fas fa-ellipsis-h"></i>
-                    </div>
-                    <div class="listItems">
-                       
-                    </div>
-                    <div class="addlist">
-                       <div class="addText">
-                            <span class="plus">+</span>
-                            <p>Add an other Card</p>
-                       </div>
-                       <div class="form">
-                            <input type="text"  id="texta" placeholder="Enter here">
-                            <div class="btn">
-                                <button type="button" id="add">Add card</button>
-                                <button id="can" type="button">Cancle</button>
-                            </div>
-                        </div>
-                    </div>
+        <div class="clientList">
+              <div class="clientListHeader ">
+                 <div class="clientListName flexRow">
+                        <h3>Re:Coded Web ...</h3> <i class="far fa-bell"></i>
                  </div>
-                 <div class="list">
-                    <div draggable="true" class="listHead">
-                        <p>Done</p> <i class="fas fa-ellipsis-h"></i>
-                    </div>
-                    <div class="listItems">
-                       
-                    </div>
-                    <div class="addlist">
-                       <div class="addText">
-                            <span class="plus">+</span>
-                            <p>Add an other Card</p>
-                       </div>
-                       <div class="form">
-                            <input type="text"  id="texta" placeholder="Enter here">
-                            <div class="btn">
-                                <button type="button" id="add">Add card</button>
-                                <button id="can" type="button">Cancle</button>
-                            </div>
-                        </div>
-                    </div>
-                 </div>
-            </div>
+                <div class="clientHeaderUser flexRow">
+                        <i class="fas fa-circle"></i>  <h4></h4>
+                </div>
+              </div>
 
+              <div class="jumpTo">
+                  <div class="jumpToContent flexRow">
+                        <i class="fas fa-search"></i> <p>Jump To ...</p>
+                  </div>
+              </div>
+
+              <div class="threads flexRow">
+                    <i class="fas fa-comment-dots"></i> <p>All Threads</p>
+              </div>
+
+              <div class="channelList">
+                  <div class="channelHead flexRow">
+                      <p>Channels</p>  <i class="fas fa-plus-circle"></i>
+                  </div>
+              </div>
+
+              <div class="directMes">
+                  <div class="directMesHead flexRow">
+                      <p>Direct Messages</p>  <i class="fas fa-plus-circle"></i>
+                  </div>
+                  
+              </div>
         </div>
+       <div class="friendsChat">
+           <div class="friendChat">
+               <div class="friendChatHead flexRow">
+                   <div class="friendInfo">
+                       <h3>Mabast</h3>
+                       <div class="info flexRow">
+                            <i class="far fa-star"></i>
+                            <div class="state flexRow">
+                                    <i class="fas fa-circle"></i>
+                                    <p>Active</p>
+                            </div>
+                            <p class="username">Mabast Hashem</p>
+                       </div>
+                   </div>
+                   <div class="features flexRow">
+                        <div>
+                                <i class="fas fa-phone"></i>
+                                <i class="fas fa-info-circle"></i>
+                                <i class="fas fa-cog"></i>
+                                <input value="" placeholder="Search"/>
+                                <i class="fas fa-at"></i>
+                                <i class="far fa-star"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                   </div>
+               </div>
+               <div class="chatBody">
+                  
+               </div>
+
+
+               <div class="sendArea flexRow">
+                    <i class="fas fa-plus"></i>
+                    <div class="writeSms flexRow">
+                         <input type="text" placeholder="Massage @Mabast" name="" id="userSms">
+                         <i class="fas fa-at"></i>
+                         <i class="far fa-smile-wink"></i>
+                    </div>
+               </div>
+           </div>
+       </div>
 
     </section>
 
+    <div class="form-popup " id="myForm">
+        <form action="/action_page.php" class="form-container flexCol">
+          <h1>Login</h1>
+      
+          <label for="email"><b>username</b></label>
+          <input class="usernameForm" type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input class="pass" type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="button" onclick="login()">Login</button>
+        </form>
+      </div>
+
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  
     <script src="js/java.js"></script>
 </body>
 
